@@ -1,6 +1,6 @@
 import axios from "axios";
 const axoiosInstance = axios.create({
   // baseURL: "http://127.0.0.1:5001/clone-8db4d/us-central1/api",
-  baseURL: "https://amazon-backend-deployment.onrender.com/",
+  baseURL: "https://amazon-backend-deployment-tfh9.onrender.com",
 });
 export default axoiosInstance;
