@@ -39,6 +39,7 @@ const CategoriesDetails = () => {
               key={singleCategory.id}
               {...singleCategory}
               isAdded={true}
+              showItemQuantity={false}
             />
           ))}
         </div>

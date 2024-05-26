@@ -16,6 +16,7 @@ const SingleProducts = ({
   quantity,
   flex,
   hasDescription,
+  showItemQuantity,
   isAdded,
   mb,
 }) => {
@@ -49,7 +50,7 @@ const SingleProducts = ({
         <div className={ProductStyle.rating}>
           <Rating value={rating?.rate} precision={0.1} />
           <small>{rating?.count}</small>
-          {quantity && (
+          {showItemQuantity && (
             <div className={ProductStyle.smallFlex}>
               <small>{rating?.count}</small>
               <small className={ProductStyle.quantity}>{quantity} items</small>

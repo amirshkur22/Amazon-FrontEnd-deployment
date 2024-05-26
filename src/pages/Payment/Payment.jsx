@@ -98,7 +98,7 @@ const Payment = () => {
           <h3>Review items and delivery</h3>
           <div className={paymentStyle.flexImage}>
             {cart?.map((item) => (
-              <SingleProducts key={item.id} {...item} flag cart mb={true} />
+              <SingleProducts key={item.id} {...item} mb={true} showItemQuantity={false}/>
             ))}
           </div>
         </div>

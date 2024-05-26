@@ -47,6 +47,7 @@ const Cart = () => {
                 flex={true}
                 hasDescription={true}
                 isAdded={false}
+                showItemQuantity={false}
               />
               <div className={CartStyle.buttonConainer}>
                 <button onClick={() => increase(item)}>

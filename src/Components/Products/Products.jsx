@@ -24,7 +24,7 @@ const Products = () => {
     <>
       {isLoading?(<Loader/>):(<div className={productsStyle.allProdutsContainer}>
         {products?.map((singleproduct, index) => (
-          <SingleProducts key={index} {...singleproduct} isAdded={true} />
+          <SingleProducts key={index} {...singleproduct} isAdded={true} showItemQuantity={ false} />
         ))}
       </div>)}
     </>
