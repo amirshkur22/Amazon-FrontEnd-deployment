@@ -1,0 +1,75 @@
+.sighUpSignInConatiner {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sighUpSignInConatiner img {
+  margin: 30px auto;
+  object-fit: contain;
+  width: 100px;
+}
+.formContainer {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.formContainer h1 {
+  font-size: 25px;
+  margin: 20px 0;
+}
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.formContainer form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.formContainer form input {
+  margin-bottom: 10px;
+  padding: 8px 16px;
+  background-color: #fff;
+  width: 100%;
+  border: none;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  outline: none;
+  box-sizing: border-box;
+}
+.formContainer form input:focus {
+  outline: 2px solid orange;
+}
+.formContainer button {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.signInBtn {
+  background: #f0c14b;
+}
+.signInBtn:hover {
+  background: var(--primary-shade);
+}
+.formContainer p {
+  padding: 10px 0px;
+}
+.signUpBtn:hover {
+  background: lightgray;
+}
+.formContainer small{
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px;
+}

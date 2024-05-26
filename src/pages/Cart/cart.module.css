@@ -1,0 +1,75 @@
+.cartContainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.cartContainer img{
+    width: 100px !important;
+}
+.cartProduct{
+    display: flex;
+    gap: 10px;
+}
+.buttonConainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.buttonConainer button{
+    padding: 5px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+}
+.buttonConainer button:hover svg{
+    background-color: var(--primary-color);
+}
+.cartContainer div:not(.leftSide)
+.leftSide{
+    padding: 20px;
+}
+.leftSide h2, .leftSide h3{
+    padding: 10px;
+}
+.leftSide hr{
+    margin: 10px;
+}
+.rightSide{
+    padding: 20px;
+    min-width: 300px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid rgb(193, 193, 193);
+    background-color: rgb(242,242, 241);
+    border-radius: 5px;
+}
+.rightSide a{
+    text-align: center;
+    width: 100%;
+    border: none;
+    background-color:var(--primary-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+}
+.rightSide a:hover{
+    background: var(--primary-shade);
+}
+.rightSide>div{
+    display: flex;
+    gap: 20px;
+}
+@media(max-width:968px){
+    .cartContainer{
+        flex-direction: column;
+        order: 1;
+    }
+}
