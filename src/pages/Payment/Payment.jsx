@@ -28,12 +28,12 @@ const Payment = () => {
   const navigate = useNavigate();
 
   const handleChange = (e) => {
-    console.log(e);
+    // console.log(e);
     e?.error?.message ? setCardError(e?.error?.message) : setCardError("");
   };
 
   const handlePayment = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     try {
       setProcessing(true);
@@ -43,7 +43,7 @@ const Payment = () => {
         url: `/payment/create?total=${totalPrice * 100}`,
       });
 
-      console.log(response.data);
+      // console.log(response.data);
       const clientSecret = response.data?.clientSecret;
 
       //       // 2. client side (react side confirmation using stripe)
@@ -53,7 +53,7 @@ const Payment = () => {
         },
       });
 
-      console.log(paymentIntent);
+      // console.log(paymentIntent);
 
       //       // 3. after the confirmation --> order firestore database save, clear cart
       const ordersCollection = collection(
@@ -98,7 +98,12 @@ const Payment = () => {
           <h3>Review items and delivery</h3>
           <div className={paymentStyle.flexImage}>
             {cart?.map((item) => (
-              <SingleProducts key={item.id} {...item} mb={true} showItemQuantity={false}/>
+              <SingleProducts
+                key={item.id}
+                {...item}
+                mb={true}
+                showItemQuantity={false}
+              />
             ))}
           </div>
         </div>
